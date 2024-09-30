@@ -5,7 +5,6 @@ section .text
   extern ft_strlen
   extern malloc
   extern ft_strcpy
-  extern __errno_location
 
 ft_strdup:
   call ft_strlen
@@ -14,16 +13,10 @@ ft_strdup:
   mov rdi, rax
   call malloc
   cmp rax, 0
-  jle error
+  je ret
   mov rdi, rax
   mov rsi, rbx
   call ft_strcpy
-  ret
 
-error:
-  neg rax
-  mov rbx, rax
-  call __errno_location
-  mov [rax], rbx
-  mov rax, -1
+return:
   ret
