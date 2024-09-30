@@ -1,7 +1,7 @@
 bits 64
 
 section .text
-  errno_location
+  global ft_strcmp
 
 ft_strcmp:
 

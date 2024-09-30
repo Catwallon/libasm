@@ -1,7 +1,7 @@
 bits 64
 
 section .text
-  errno_location
+  global ft_strcpy 
 
 ft_strcpy:
   xor rcx, rcx

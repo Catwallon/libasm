@@ -22,8 +22,8 @@ int main()
 		char *dup2;
 
 		printf("----- FT_STRLEN -----\n");
-		printf("\"%s\"	expected: %d, result: %d\n", str1, strlen(str1), ft_strlen(str1));
-		printf("\"%s\"	expected: %d, result: %d\n", str2, strlen(str2), ft_strlen(str2));
+		printf("\"%s\"	expected: %ld, result: %ld\n", str1, strlen(str1), ft_strlen(str1));
+		printf("\"%s\"	expected: %ld, result: %ld\n", str2, strlen(str2), ft_strlen(str2));
 
 		printf("\n----- FT_STRCPY -----\n");
 		printf("\"%s\"	expected: \"%s\", result: \"%s\"\n", str1, strcpy(buffer, str1), ft_strcpy(buffer, str1));
